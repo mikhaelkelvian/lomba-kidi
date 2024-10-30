@@ -11,23 +11,23 @@ import PanelSurya from '../assets/Panel_Surya.jpg'
 
 const Gallery = () => {
   const artworks = [
-    { src: HutanTropis, description: "Hutan tropis yang lestari" },
+    { src: HutanTropis, description: "Hutan Tropis yang Lestari" },
     {
       src: LukisanGunung,
       description: "Lukisan Perkampung di Garut Jawa-Barat-1905 ",
     },
     {
       src: DaurUlang,
-      description: "Seni daur ulang dari plastik bekas",
+      description: "Seni Daur Dlang dari Plastik Bekas",
     },
     {
       src: DaurUlang2,
-      description: "Seni daur ulang dari sampah bekas",
+      description: "Seni Daur Ulang dari Sampah Bekas",
     },
     { src: TamanNasional, description: "Taman Nasional Komodo di Labuan Bajo" },
     { src: CagarAlam, description: "Cagar Alam" },
-    { src: PanelSurya, description: "Karya seni panel surya" },
-    { src: TurbinAngin, description: "Seni turbin angin bunga tulip" },
+    { src: PanelSurya, description: "Karya Seni Panel Surya" },
+    { src: TurbinAngin, description: "Seni Turbin Angin Bunga Tulip" },
   ];
 
   return (

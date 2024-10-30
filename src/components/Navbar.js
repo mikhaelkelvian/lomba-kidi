@@ -1,12 +1,19 @@
 import React from "react";
-import { FaSun, FaMoon, FaUser } from "react-icons/fa"; // Mengimpor ikon matahari dan bulan
+import { FaSun, FaMoon, FaUser } from "react-icons/fa"; 
 import "./Navbar.css";
+import logo from '../assets/ArtEco_logo.png'
 
 const Navbar = ({ isDarkMode, toggleTheme }) => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/">ArtEco</a>
+        <a href="/">
+          <img
+            src={logo}
+            alt="ArtEco Logo"
+            style={{ height: "150px", width: "auto" }}
+          />
+        </a>
       </div>
       <ul className="navbar-menu">
         <li>
@@ -16,21 +23,19 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
           <a href="#gallery">Galeri</a>
         </li>
         <li>
-          <a href="#about">Tentang Kami</a>
-        </li>
-        <li>
           <a href="#calculator">Kalkulator</a>
         </li>
         <li>
           <a href="#innovation">Inovasi Hijau</a>
         </li>
         <li>
+          <a href="#about">Tentang Kami</a>
+        </li>
+        <li>
           <a href="#contact">Kontak</a>
         </li>
       </ul>
       <div className="navbar-actions">
-        {" "}
-        {/* Pembungkus untuk dark mode dan login */}
         <button className="toggle-button" onClick={toggleTheme}>
           {isDarkMode ? <FaSun /> : <FaMoon />}
         </button>

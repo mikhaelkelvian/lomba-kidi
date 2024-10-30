@@ -1,4 +1,4 @@
-// CarbonCalculator.js
+
 import React, { useState } from "react";
 import "./CarbonCalculator.css";
 
@@ -9,7 +9,6 @@ const CarbonCalculator = () => {
   const [carbonFootprint, setCarbonFootprint] = useState(0);
 
   const calculateFootprint = () => {
-    // Perhitungan sederhana dari jumlah kategori
     const totalFootprint = transport * 0.2 + electricity * 0.3 + food * 0.1;
     setCarbonFootprint(totalFootprint.toFixed(2));
   };

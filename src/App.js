@@ -4,8 +4,8 @@ import Gallery from "./components/Gallery";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import CarbonCalculator from "./components/CarbonCalculator";
-import AOS from "aos"; // Import AOS
-import "aos/dist/aos.css"; // Import file CSS AOS
+import AOS from "aos"; 
+import "aos/dist/aos.css"; 
 import "./App.css";
 import InovasiHijau from "./components/InovasiHIjau";
 
@@ -14,8 +14,8 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration:1000, // Durasi animasi dalam milidetik
-      once: true, // Hanya animasi sekali saat di-scroll
+      duration:1000, 
+      once: true, 
     });
   }, []);
 

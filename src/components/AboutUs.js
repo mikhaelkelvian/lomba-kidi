@@ -17,11 +17,6 @@ const AboutUs = () => {
         menghadirkan karya seni yang memperlihatkan bagaimana material daur
         ulang dan proses kreatif dapat menjadi bagian dari solusi lingkungan.
       </p>
-      <img
-        src="/assets/about-us-image.jpg"
-        alt="Ilustrasi tentang kami"
-        className="about-image"
-      />
     </section>
   );
 };
