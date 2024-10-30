@@ -1,0 +1,76 @@
+/* Pembatas antara hero dan galeri */
+.gallery-section {
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 2px solid #ffffff;
+  text-align: center;
+}
+
+/* Styling untuk Judul Galeri */
+.gallery-title {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #000000; /* Warna hijau yang cerah */
+  padding: 0.5rem 2rem;
+  border-radius: 50px; /* Membuat latar belakang menjadi bulat */
+  box-shadow: 0px 4px 10px rgba(33, 206, 24, 0.2); /* Efek bayangan */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 20px;
+  font-style: oblique;
+}
+
+.gallery-title:hover {
+  background-color: #2E8B57; /* Warna hijau lebih gelap saat hover */
+  transform: scale(1.05); /* Efek memperbesar saat hover */
+}
+
+
+/* Galeri Gambar */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  position: relative;
+  width: 300px; /* Atur lebar yang lebih besar untuk bentuk landscape */
+  height: 200px; /* Atur tinggi yang lebih kecil untuk bentuk landscape */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mengatur agar gambar sesuai tanpa mengubah rasio */
+  border-radius: 8px; /* Membuat sudut sedikit melengkung */
+}
+
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay untuk deskripsi gambar */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}

@@ -1,0 +1,78 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+/* Mode Siang (Light Mode) */
+.light {
+  background: url('../src/assets/day_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Mode Malam (Dark Mode) */
+.dark {
+  background: url('../src/assets/night_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+
+
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+}
+
+/* Styling untuk <h1> */
+main h1 {
+  font-size: 2rem; /* Ukuran lebih besar */
+  color: #4CAF50; /* Warna hijau cerah untuk kontras */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan untuk memperjelas */
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.main h1:hover {
+  color: #2E8B57; /* Warna hijau yang sedikit lebih gelap saat hover */
+}
+
+/* Styling untuk <p> */
+main p {
+  font-size: 1rem;
+  color: #ffffff; /* Warna abu-abu untuk kontras lebih baik */
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Bayangan kecil untuk kedalaman */
+}
+
+/* Tambahkan efek animasi ringan saat hover pada teks */
+main h1, main p {
+  transition: transform 0.3s ease;
+}
+
+main h1:hover, main p:hover {
+  transform: scale(1.05); /* Perbesar sedikit saat dihover */
+}

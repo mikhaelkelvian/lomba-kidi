@@ -1,0 +1,100 @@
+/* Styling dasar untuk navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #30e63608; /* Warna hijau */
+}
+
+.navbar-logo a {
+  color: rgb(97, 179, 30);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #FFD700; /* Warna efek hover */
+}
+
+.navbar-menu li {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 16px; /* Memberi ruang di sekitar teks */
+  border-radius: 20px; /* Membuat sudut melengkung */
+  background-color: rgb(0, 0, 0); /* Warna latar belakang transparan */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Perbaiki selektor hover */
+.navbar-menu li:hover {
+  color: #FFD700; /* Warna efek hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang efek hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Sembunyikan menu pada layar kecil */
+  }
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Atur jarak antara tombol dark mode dan login */
+}
+
+.toggle-button, .login-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.toggle-button {
+  padding: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #FFD700; /* Warna efek hover */
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px; /* Atur padding agar sesuai */
+  font-size: 1em;
+  gap: 8px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.215);
+  transition: background-color 0.3s ease;
+  font: bold;
+}
+
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang efek hover */
+}
