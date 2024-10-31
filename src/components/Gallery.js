@@ -10,6 +10,27 @@ import TurbinAngin from '../assets/Turbin_angin.png'
 import PanelSurya from '../assets/Panel_Surya.jpg'
 
 const Gallery = () => {
+  return (
+    <section className="gallery-section" id="gallery" data-aos="fade-left">
+      <h2 className="gallery-title">Galeri Seni</h2>
+      <div className="gallery">
+        {artworks.map((art, index) => (
+          <div className="gallery-item" key={index}>
+            <img
+              src={art.src}
+              alt={`Artwork ${index}`}
+              className="gallery-image"
+            />
+            <div className="overlay">
+              <p>{art.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
   const artworks = [
     { src: HutanTropis, description: "Hutan Tropis yang Lestari" },
     {
@@ -30,25 +51,6 @@ const Gallery = () => {
     { src: TurbinAngin, description: "Seni Turbin Angin Bunga Tulip" },
   ];
 
-  return (
-    <section className="gallery-section" id="galerry" data-aos="fade-left">
-      <h2 className="gallery-title">Galeri Seni</h2>
-      <div className="gallery">
-        {artworks.map((art, index) => (
-          <div className="gallery-item" key={index}>
-            <img
-              src={art.src}
-              alt={`Artwork ${index}`}
-              className="gallery-image"
-            />
-            <div className="overlay">
-              <p>{art.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
+  
 
 export default Gallery;

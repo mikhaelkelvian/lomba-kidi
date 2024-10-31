@@ -1,16 +1,24 @@
 .navbar {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 0.1px 2rem;
-  background-color: #30e63608;
+  background-color: rgba(48, 230, 54, 0.1); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
   margin-bottom: auto;
-  position: relative; 
-  top: -30px; 
+  top: 0; 
+  z-index: 90;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .navbar-logo a {
+ width: 10px; 
+  height: 20px;
   margin: 10px;
+
 }
 
 .navbar-menu {
@@ -18,6 +26,7 @@
   list-style: none;
   gap: 1.5rem;
   position: fixed relative; 
+  z-index: 100;
 }
 
 .navbar-menu li a {
@@ -51,6 +60,26 @@
     display: none; 
   }
 }
+
+.translate-container {
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+  color: #fff;
+}
+
+.translate-option {
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.translate-option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 .navbar-actions {
   display: flex;

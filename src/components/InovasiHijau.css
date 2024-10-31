@@ -1,22 +1,28 @@
 .inovasi-hijau {
   text-align: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, #a1e5a5, #70d8c6);
+  padding: 8rem;
+  margin: auto;
+  background: url('../assets/IHbg.png') no-repeat center center;
+  background-size: cover;
   color: #333;
   border-radius: 8px;
 }
 
+
 .inovasi-title {
-  font-size: 2rem;
+  font-size: 3rem;
+  position: relative;
   color: #2e7d32;
   margin-bottom: 1rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .inovasi-description {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #333;
   max-width: 600px;
   margin: 0 auto 1rem;
   line-height: 1.6;
+  text-align: justify;
 }
